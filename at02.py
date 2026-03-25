@@ -124,3 +124,38 @@ if num % 1 == 0:
     print(f'O número {num} é inteiro')
 else:
     print(f'O número {num} é decimal')
+
+# 10. Um programa deve ser escrito para ler dois números e, em seguida, perguntar à pessoa usuária qual operação ele deseja realizar. O resultado da operação deve incluir informações sobre o número - se é par ou ímpar, positivo ou negativo e inteiro ou decimal.
+
+num_1 = float(input('Digite o primeiro número: '))
+num_2 = float(input('Digite o segundo número: '))
+operacao = input('Informe a opração desejada: ')
+
+if operacao == '+':
+    resultado = num_1 + num_2
+elif operacao == '-':
+    resultado = num_1 - num_2
+elif operacao == '*':
+    resultado = num_1 * num_2
+elif operacao == '/':
+    resultado = num_1 / num_2
+else:
+    print('Operação inválida')
+    resultado = 0
+
+if resultado % 1 == 0:
+    print('O resultado é inteiro.')
+else:
+    print('O resultado é decimal')
+
+if resultado % 2 == 0:
+    print('O resultado é par')
+else:
+    print('O resultado é ímpar.')
+
+if resultado > 0:
+    print('O resultado é positivo')
+elif resultado == 0:
+    print('O resultado é neutro')
+else:
+    print('O resultado é negativo')
